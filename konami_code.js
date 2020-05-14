@@ -40,15 +40,14 @@ function initAlt() {
   document.body.addEventListener("keydown", (event) => {
     debugger
     temp.push(event.key);
+    for (let i = 0; i < temp.length; i++) {
+      if (temp[i] !== codes[i]) {
+        temp = []
+        break
+      }
+    }
     if (temp === codes) {
       alert("Congratulations! You have cracked the code!");
-    } else {
-        for (let i = 0; i < temp.length; i++) {
-            if (temp[i] !== codes[i]) {
-                temp = []
-                break
-            }
-        }
-      }
+    }
   })
 }
