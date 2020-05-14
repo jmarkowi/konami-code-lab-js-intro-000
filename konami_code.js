@@ -46,7 +46,7 @@ function initAlt() {
         break
       }
     }
-    if (temp === codes) {
+    if (temp.length == 10) {
       alert("Congratulations! You have cracked the code!");
     }
   })
