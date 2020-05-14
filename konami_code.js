@@ -22,7 +22,7 @@ function init() {
       counter++;
 //the only way for counter to equal 10 is if all keystrokes have been correct!
       if (counter === codes.length) {
-        alert("Congratulations! You have cracked the code!");
+        alert("Hurray! You have cracked the code!");
         counter = 0;
       }
 //if it doesn't match, reset the counter and listen for the
