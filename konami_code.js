@@ -38,7 +38,7 @@ let temp = []
 
 function initAlt() {
   document.body.addEventListener("keydown", (event) => {
-    //debugger
+    debugger
     temp.push(event.key);
     for (let i = 0; i < temp.length; i++) {
       if (temp[i] !== codes[i]) {
